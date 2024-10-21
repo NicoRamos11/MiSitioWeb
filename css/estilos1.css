@@ -19,7 +19,7 @@ header div{
 	width: 40%;
 }
 header div a img{
-	width: 45%;
+	width: 40%;
 }
 nav ul{
 	margin-top: 1.5%;
@@ -55,17 +55,114 @@ section{
 	margin-top: 3%;
 	display: flex;
 	justify-content: center;
-	color: #ffffff;
 }
 .principal div{
 	width: 50%;
-	text-align: center;
 }
 .principal div img{
-	width: 50%;
+	width: 90%;
 }
 .principal div p{
+	margin-top: 1%;
 	color: #000000;
+}
+
+.personajes {
+	width: 100%;
+	display: block;
+}
+.personajes div{
+	display: flex;
+}
+.personajes div img{
+	width: 10%;
+}
+.personajes div p{
+	padding: 2%;
+}
+
+.temporadas{
+	width: 100%;
+	height: 500px;
+	margin-top: 2%;
+	display: flex;
+}
+.temporadas div{
+	width: 50%;
+	width: 600px;
+	height: 420px;
+}
+.temporadas div img{
+	width: 100%;
+}
+.temporadas div p{
+	margin-top: 3%;
+	padding-left: 5%;
+}
+#temp{
+	margin-top: 1%;
+	margin-left: 0%;
+	text-transform: initial;
+}
+.peli{
+	width: 100%;
+	height: 700px;
+	margin-top: 2%;
+	display: flex;
+}
+.peli div{
+	width: 50%;
+	width: 500px;
+}
+.peli div img{
+	width: 93%;
+}
+.peli div p{
+	width: 600px;
+	margin-top: 4%;
+}
+.especial{
+	width: 100%;
+	height: 800px;
+	display: block;
+}
+.especial div{
+	width: 50%;
+}
+.especial div img{
+	width: 50%;
+}
+.especial div p{
+	width: 450px;
+}
+
+.galeria{
+	width: 100%;
+	height: 400px;
+	margin-top: 2%;
+	display: flex;
+	justify-content: center;
+}
+.galeria div{
+	width: 50%;
+}
+.galeria div img{
+	width: 80%;
+}
+.galeria div h4{
+	width: 500px;
+}
+
+.resenas{
+	width: 100%;
+	display: block;
+}
+.resenas h2{
+	margin-top: 2%;
+	margin-bottom: 1%;
+}
+.resenas div{
+	width: 100%;
 }
 
 h1{
@@ -74,10 +171,18 @@ h1{
 	margin-right: auto;
 	text-transform: uppercase;
 }
+h2{
+	margin-bottom: 2%;
+}
+h3{
+	max-width: 200px;
+	margin-top: 3%;
+}
 h4{
-	margin-top: 2%;
+	margin-top: 1%;
 	color: #000000;
 }
+
 footer{
 	display: flex;
 	justify-content: center;
