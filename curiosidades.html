@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Neucha&family=Rubik+Glitch&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/estilos1.css">
     <title>Steins;Gate</title>
 </head>
@@ -15,7 +16,8 @@
         <div>
             <a href="index.html"><img src="images/logo.jpg" alt="Logo"></a>
         </div>
-        <nav>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        <nav id="menu_bar" class="">
             <ul> 
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="personajes.html">Personajes</a></li>
@@ -31,7 +33,7 @@
         <article class="curiosidades">
             <h3>"SERN"</h3>
             <div>
-                <p>La organización antagonista mencionada en el anime realmente existe. Su nombre real es CERN y está ubicada es Suiza. Se dedica a la física de partículas y es el laboratorio de investigación más importante del mundo.</p>
+                <p>La organización antagonista mencionada en el anime realmente <b>existe</b>. Su nombre real es <b>CERN</b> y está ubicada es Suiza. Se dedica a la física de partículas y es el laboratorio de investigación más importante del mundo.</p>
             </div>
             <div>
                 <img src="images/cern2.jpg" alt="CERN">
@@ -39,17 +41,49 @@
             </div>
             <h3>Jhon Titor</h3>
             <div style="display: block;">
-                <p>El caso de Jhon Titor también es real. En los años 2000 un usuario apareció en foros de Internet afirmando ser un viajero del tiempo. Se trataba de un soldado estadounidense proveniente del año 2036, cuya misión era viajar al año 1975 para recuperar una computadora IBM 5100. Decía que CERN iba a descubrir la forma de viajar en el tiempo. Tal cual se menciona en el anime. Tambien hizo varias predicciones, pero muchas no muy acertadas. Según él, sus predicciones podían no cumplirse debido a que provenía de una línea de tiempo distinta.</p>
-                <a href="https://www.youtube.com/watch?v=O6PeWUUgEmo" target="_blank"> Más información sobre el caso...</a> 
+                <p>El caso de Jhon Titor también es real. En los años 2000 un usuario apareció en foros de Internet afirmando ser un <b>viajero del tiempo</b>. Se trataba de un soldado estadounidense proveniente del año 2036, cuya misión era viajar al año 1975 para recuperar una computadora IBM 5100. Decía que <b>CERN</b> iba a descubrir la forma de <b>viajar en el tiempo</b>. Tal cual se menciona en el anime. Tambien hizo varias predicciones, pero muchas no muy acertadas. Según él, sus predicciones podían no cumplirse debido a que provenía de una línea de tiempo distinta.</p>
+                <a href="https://www.youtube.com/watch?v=O6PeWUUgEmo" target="_blank">Más información sobre el caso</a> 
             </div>
         </article>
         
     </section>
-    <footer>
-        <a href="https://www.youtube.com/watch?v=B4LvDiIi128&t=0s" target="_blank"><img src="images/redes/facebook.jpg" alt="Facebook"></a>
-        <a href="https://www.youtube.com/watch?v=B4LvDiIi128&t=0s" target="_blank"><img src="images/redes/twitter.jpg" alt="Twitter"></a>
-        <a href="https://www.youtube.com/watch?v=B4LvDiIi128&t=0s" target="_blank"><img src="images/redes/instagram.jpg" alt="Instagram"></a>
-        <a href="https://www.youtube.com/watch?v=B4LvDiIi128&t=0s" target="_blank"><img src="images/redes/youtube.jpg" alt="Youtube"></a>
+    <footer class="pie">
+        <ul>
+            <li><a href="https://www.youtube.com/watch?v=B4LvDiIi128&t=0s" target="_blank"><img src="images/redes/facebook.jpg" alt="Facebook"></a></li>
+            <li><a href="https://www.youtube.com/watch?v=B4LvDiIi128&t=0s" target="_blank"><img src="images/redes/twitter.jpg" alt="Twitter"></a></li>
+            <li><a href="https://www.youtube.com/watch?v=B4LvDiIi128&t=0s" target="_blank"><img src="images/redes/instagram.jpg" alt="Instagram"></a></li>
+            <li><a href="https://www.youtube.com/watch?v=B4LvDiIi128&t=0s" target="_blank"><img src="images/redes/youtube.jpg" alt="Youtube"></a></li>
+        </ul>
+        <ul>
+            <li class="menu-elem">
+              <a href="index.html" class="menu-icon"> Inicio </a>
+            </li>
+            <li class="menu-elem">
+              <a href="personajes.html" class="menu-icon"> Personajes </a>
+            </li>
+            <li class="menu-elem">
+              <a href="temporadas.html" class="menu-icon"> Temporadas </a>
+            </li>
+            <li class="menu-elem">
+              <a href="curiosidades.html" class="menu-icon"> Curiosidades </a>
+            </li>
+            <li class="menu-elem">
+              <a href="contacto.html" class="menu-icon"> Contacto </a>
+            </li>
+        </ul>
+        <ul>
+            <li><p>@2024 | Todos los derechos reservados</p></li>
+        </ul>
     </footer>
+    <script type="text/javascript">
+        function myFunction() {
+          var x = document.getElementById("menu_bar");
+          if (x.className === "") {
+            x.className += " responsive";
+          } else {
+            x.className = "";
+          }
+        }
+    </script>
 </body>
 </html>

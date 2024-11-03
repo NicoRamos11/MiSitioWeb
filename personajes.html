@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Neucha&family=Rubik+Glitch&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/estilos1.css">
     <title>Steins;Gate</title>
 </head>
@@ -15,7 +16,8 @@
         <div>
             <a href="index.html"><img src="images/logo.jpg" alt="Logo"></a>
         </div>
-        <nav>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        <nav id="menu_bar" class="">
             <ul> 
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="personajes.html">Personajes</a></li>
@@ -32,13 +34,13 @@
             <h3>Okabe Rintarou</h3>
             <div>
                 <img src="images/okabe.jpg" alt="Okabe Rintarou">
-                <p>Okabe Rintaro (18 años): estudia en la universidad. Se hace llamar Hooin Kyouma, un científico loco, arrogante y conspiranoico. Es el fundador y Miembro del Laboratorio 001 del laboratorio donde experimenta con distintos artefactos a los que llama “artefactos futuristas”.  Afirma que hay una organización secreta que va tras él y que se quiere apoderar del mundo. Es el único capaz de recordar los hechos entre las distintas líneas temporales.</p>
+                <p>Okabe Rintaro (18 años): estudia en la universidad. Se hace llamar Hooin Kyouma, un científico loco, arrogante y conspiranoico. Es el fundador y <b>Miembro del Laboratorio 001</b> del laboratorio donde experimenta con distintos artefactos a los que llama <b>“artefactos futuristas”</b>.  Afirma que hay una organización secreta que va tras él y que se quiere apoderar del mundo. Es el único capaz de recordar los hechos entre las distintas líneas temporales.</p>
             </div>
         </article>
         <article class="personajes2">
             <h3>Makise Kurisu</h3>
             <div>
-                <p>Makise Kurisu (17 años): es una investigadora prodigio especializada en neurociencia. Estudia en una universidad estadounidense. Pese a su corta edad tiene un artículo publicado en la revista “Sciency”. En su visita a Japon se topa con Okabe y tras un desencuentro se presenta en su laboratorio donde descubre que están investigando los mensajes enviados al pasado. Ella no cree en los viajes en el tiempo, y para refutar la teoría de Okabe decide ayudarlos convirtiéndose en la Miembro del Laboratorio 004.</p>
+                <p>Makise Kurisu (17 años): es una investigadora prodigio especializada en neurociencia. Estudia en una universidad estadounidense. Pese a su corta edad tiene un artículo publicado en la revista “Sciency”. En su visita a Japon se topa con Okabe y tras un desencuentro se presenta en su laboratorio donde descubre que están investigando los mensajes enviados al pasado. Ella no cree en los viajes en el tiempo, y para refutar la teoría de Okabe decide ayudarlos convirtiéndose en la <b>Miembro del Laboratorio 004</b>.</p>
                 <img src="images/kurisu.jpg" alt="Makise Kurisu">
             </div>
         </article>
@@ -46,24 +48,56 @@
             <h3>Shiina Mayuri</h3>
             <div id="mayuri">
                 <img src="images/mayuri.jpg" alt="Shiina Mayuri">
-                <p>Shiina Mayuri (16 años): es cosplayer, algo torpe y la mejor amiga de Okabe. Luego de perder a su abuela Okabe decide adoptar esa personalidad tan característica con el fin de protegerla. Es por eso que ella siempre está en el laboratorio a pesar de no aportar ningún conocimiento científico siendo la Miembro del Laboratorio 002.</p>
+                <p>Shiina Mayuri (16 años): es cosplayer, algo torpe y la mejor amiga de Okabe. Luego de perder a su abuela Okabe decide adoptar esa personalidad tan característica con el fin de protegerla. Es por eso que ella siempre está en el laboratorio a pesar de no aportar ningún conocimiento científico siendo la <b>Miembro del Laboratorio 002</b>.</p>
             </div>
         </article>
         <article class="personajes2">
             <h3>Hashida Itaru</h3>
             <div>
-                <p>Hashira Itaru (19 años): mejor conocido como Daru, es amigo de Okabe desde la secundaria. Se especializa en la informática, es un aficionado a la cultura “otaku”, siendo, además, el Miembro del Laboratorio 003. Se refiere a si mismo como un "Super hacker", y es fundamental para realizar el hackeo a SERN y descubrir los experimentos que realizaban en secreto.</p>
+                <p>Hashira Itaru (19 años): mejor conocido como Daru, es amigo de Okabe desde la secundaria. Se especializa en la informática, es un aficionado a la cultura “otaku”, siendo, además, el <b>Miembro del Laboratorio 003</b>. Se refiere a si mismo como un "Super hacker", y es fundamental para realizar el hackeo a SERN y descubrir los experimentos que realizaban en secreto.</p>
                 <img src="images/daru.jpg" alt="Hashida Itaru">
                 
             </div>
         </article>
         
     </section>
-    <footer>
-        <a href="https://www.youtube.com/watch?v=B4LvDiIi128&t=0s" target="_blank"><img src="images/redes/facebook.jpg" alt="Facebook"></a>
-        <a href="https://www.youtube.com/watch?v=B4LvDiIi128&t=0s" target="_blank"><img src="images/redes/twitter.jpg" alt="Twitter"></a>
-        <a href="https://www.youtube.com/watch?v=B4LvDiIi128&t=0s" target="_blank"><img src="images/redes/instagram.jpg" alt="Instagram"></a>
-        <a href="https://www.youtube.com/watch?v=B4LvDiIi128&t=0s" target="_blank"><img src="images/redes/youtube.jpg" alt="Youtube"></a>
+    <footer class="pie">
+        <ul>
+            <li><a href="https://www.youtube.com/watch?v=B4LvDiIi128&t=0s" target="_blank"><img src="images/redes/facebook.jpg" alt="Facebook"></a></li>
+            <li><a href="https://www.youtube.com/watch?v=B4LvDiIi128&t=0s" target="_blank"><img src="images/redes/twitter.jpg" alt="Twitter"></a></li>
+            <li><a href="https://www.youtube.com/watch?v=B4LvDiIi128&t=0s" target="_blank"><img src="images/redes/instagram.jpg" alt="Instagram"></a></li>
+            <li><a href="https://www.youtube.com/watch?v=B4LvDiIi128&t=0s" target="_blank"><img src="images/redes/youtube.jpg" alt="Youtube"></a></li>
+        </ul>
+        <ul>
+            <li class="menu-elem">
+              <a href="index.html" class="menu-icon"> Inicio </a>
+            </li>
+            <li class="menu-elem">
+              <a href="personajes.html" class="menu-icon"> Personajes </a>
+            </li>
+            <li class="menu-elem">
+              <a href="temporadas.html" class="menu-icon"> Temporadas </a>
+            </li>
+            <li class="menu-elem">
+              <a href="curiosidades.html" class="menu-icon"> Curiosidades </a>
+            </li>
+            <li class="menu-elem">
+              <a href="contacto.html" class="menu-icon"> Contacto </a>
+            </li>
+        </ul>
+        <ul>
+            <li><p>@2024 | Todos los derechos reservados</p></li>
+        </ul>
     </footer>
+    <script type="text/javascript">
+        function myFunction() {
+          var x = document.getElementById("menu_bar");
+          if (x.className === "") {
+            x.className += " responsive";
+          } else {
+            x.className = "";
+          }
+        }
+    </script>
 </body>
 </html>

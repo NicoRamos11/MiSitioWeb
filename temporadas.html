@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Neucha&family=Rubik+Glitch&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/estilos1.css">
     <title>Steins;Gate</title>
 </head>
@@ -15,7 +16,8 @@
         <div>
             <a href="index.html"><img src="images/logo.jpg" alt="Logo"></a>
         </div>
-        <nav>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        <nav id="menu_bar" class="">
             <ul> 
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="personajes.html">Personajes</a></li>
@@ -33,7 +35,7 @@
                 <h3>Temporada 1</h3>
                 <div>
                     <img src="images/temporada1.jpg" alt="Primera Temporada">
-                    <p>Está primera temporada cuenta con 24 episodios. Nos muestra la vida de Okabe Rintarou un estudiante universitario algo especial. Se cree un científico loco y tiene un "Laboratorio de artefactos futuristas" que no es más que su departamento. Junto a su amigo Daru experimentan con objetos modificando sus piezas. Un día, por accidente descubren que su microondas modificado es capaz de enviar mensajes al pasado al conectarlo con el celular. Es allí donde comienzan a experimentar con este fenómeno sin ser conscientes del peligro que representa.</p>
+                    <p>Está primera temporada cuenta con <b>24 episodios</b>. Nos muestra la vida de Okabe Rintarou un estudiante universitario algo especial. Se cree un científico loco y tiene un "Laboratorio de artefactos futuristas" que no es más que su departamento. Junto a su amigo Daru experimentan con objetos modificando sus piezas. Un día, por accidente descubren que su <b>microondas modificado</b> es capaz de enviar <b>mensajes al pasado</b> al conectarlo con el celular. Es allí donde comienzan a experimentar con este fenómeno sin ser conscientes del peligro que representa.</p>
                 </div>
             </div>
         </article>
@@ -60,7 +62,7 @@
                 <h3>Temporada 2</h3>
                 <div>
                     <img src="images/temporada2.jpg" alt="Segunda Temporada">
-                    <p>La segunda temporada tiene 23 capítulos y no es una secuela como tal, sino que nos muestra el camino de Okabe tras su desición en el capítulo 23-B. Debido a las consecuencias que trajo su descubrimiento, en esta temporada vemos a un Okabe más deprimido, desanimado, pero también más responsable y consciente. Ahora asiste a la universidad y mantiene su perfil bajo. La trama principal esta vez se centra en la conservación de las memorias de las personas en un almacenamiento externo que, con ayuda de la Inteligencia Artificial, podía "revivir" a las personas. Así, Okabe descubre que conservan las memorias de alguien importante que podría traer nuevos problemas.</p>
+                    <p>La segunda temporada tiene <b>23 capítulos</b> y no es una secuela como tal, sino que nos muestra el camino de Okabe tras su desición en el capítulo 23-B. Debido a las consecuencias que trajo su descubrimiento, en esta temporada vemos a un Okabe más deprimido, desanimado, pero también más responsable y consciente. Ahora asiste a la universidad y mantiene su perfil bajo. La trama principal esta vez se centra en la conservación de las memorias de las personas en un almacenamiento externo que, con ayuda de la <b>Inteligencia Artificial</b>, podía "revivir" a las personas. Así, Okabe descubre que conservan las memorias de alguien importante que podría traer nuevos problemas.</p>
                 </div>
             </div>
         </article>
@@ -69,17 +71,49 @@
                 <h3>Película</h3>
                 <div>
                     <img src="images/pelicula.jpg" alt="Pelicula">
-                    <p>La película tiene a Kurisu como protagonista. En esta línea temporal Okabe desaparece de la existencia de todos. Kurisu es la única que lo recuerda y que puede investigar qué es lo que está pasando. Está película enlaza ciertos acontecimientos de la serie, dándoles más significado. </p>
+                    <p>La película tiene a Kurisu como protagonista. En esta línea temporal <b>Okabe desaparece</b> de la existencia de todos. Kurisu es la única que lo recuerda y que puede investigar qué es lo que está pasando. Está película enlaza ciertos acontecimientos de la serie, dándoles más significado. </p>
                 </div>
             </div>
         </article>
         
     </section>
-    <footer>
-        <a href="https://www.youtube.com/watch?v=B4LvDiIi128&t=0s" target="_blank"><img src="images/redes/facebook.jpg" alt="Facebook"></a>
-        <a href="https://www.youtube.com/watch?v=B4LvDiIi128&t=0s" target="_blank"><img src="images/redes/twitter.jpg" alt="Twitter"></a>
-        <a href="https://www.youtube.com/watch?v=B4LvDiIi128&t=0s" target="_blank"><img src="images/redes/instagram.jpg" alt="Instagram"></a>
-        <a href="https://www.youtube.com/watch?v=B4LvDiIi128&t=0s" target="_blank"><img src="images/redes/youtube.jpg" alt="Youtube"></a>
+    <footer class="pie">
+        <ul>
+            <li><a href="https://www.youtube.com/watch?v=B4LvDiIi128&t=0s" target="_blank"><img src="images/redes/facebook.jpg" alt="Facebook"></a></li>
+            <li><a href="https://www.youtube.com/watch?v=B4LvDiIi128&t=0s" target="_blank"><img src="images/redes/twitter.jpg" alt="Twitter"></a></li>
+            <li><a href="https://www.youtube.com/watch?v=B4LvDiIi128&t=0s" target="_blank"><img src="images/redes/instagram.jpg" alt="Instagram"></a></li>
+            <li><a href="https://www.youtube.com/watch?v=B4LvDiIi128&t=0s" target="_blank"><img src="images/redes/youtube.jpg" alt="Youtube"></a></li>
+        </ul>
+        <ul>
+            <li class="menu-elem">
+              <a href="index.html" class="menu-icon"> Inicio </a>
+            </li>
+            <li class="menu-elem">
+              <a href="personajes.html" class="menu-icon"> Personajes </a>
+            </li>
+            <li class="menu-elem">
+              <a href="temporadas.html" class="menu-icon"> Temporadas </a>
+            </li>
+            <li class="menu-elem">
+              <a href="curiosidades.html" class="menu-icon"> Curiosidades </a>
+            </li>
+            <li class="menu-elem">
+              <a href="contacto.html" class="menu-icon"> Contacto </a>
+            </li>
+        </ul>
+        <ul>
+            <li><p>@2024 | Todos los derechos reservados</p></li>
+        </ul>
     </footer>
+    <script type="text/javascript">
+        function myFunction() {
+          var x = document.getElementById("menu_bar");
+          if (x.className === "") {
+            x.className += " responsive";
+          } else {
+            x.className = "";
+          }
+        }
+    </script>
 </body>
 </html>

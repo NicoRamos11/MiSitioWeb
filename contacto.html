@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Neucha&family=Rubik+Glitch&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/estilos1.css">
     <title>Steins;Gate</title>
 </head>
@@ -15,7 +16,8 @@
         <div>
             <a href="index.html"><img src="images/logo.jpg" alt="Logo"></a>
         </div>
-        <nav>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        <nav id="menu_bar" class="">
             <ul> 
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="personajes.html">Personajes</a></li>
@@ -47,11 +49,43 @@
             </div>
         </article>
     </section>
-    <footer>
-        <a href="https://www.youtube.com/watch?v=B4LvDiIi128&t=0s" target="_blank"><img src="images/redes/facebook.jpg" alt="Facebook"></a>
-        <a href="https://www.youtube.com/watch?v=B4LvDiIi128&t=0s" target="_blank"><img src="images/redes/twitter.jpg" alt="Twitter"></a>
-        <a href="https://www.youtube.com/watch?v=B4LvDiIi128&t=0s" target="_blank"><img src="images/redes/instagram.jpg" alt="Instagram"></a>
-        <a href="https://www.youtube.com/watch?v=B4LvDiIi128&t=0s" target="_blank"><img src="images/redes/youtube.jpg" alt="Youtube"></a>
+    <footer class="pie">
+        <ul>
+            <li><a href="https://www.youtube.com/watch?v=B4LvDiIi128&t=0s" target="_blank"><img src="images/redes/facebook.jpg" alt="Facebook"></a></li>
+            <li><a href="https://www.youtube.com/watch?v=B4LvDiIi128&t=0s" target="_blank"><img src="images/redes/twitter.jpg" alt="Twitter"></a></li>
+            <li><a href="https://www.youtube.com/watch?v=B4LvDiIi128&t=0s" target="_blank"><img src="images/redes/instagram.jpg" alt="Instagram"></a></li>
+            <li><a href="https://www.youtube.com/watch?v=B4LvDiIi128&t=0s" target="_blank"><img src="images/redes/youtube.jpg" alt="Youtube"></a></li>
+        </ul>
+        <ul>
+            <li class="menu-elem">
+              <a href="index.html" class="menu-icon"> Inicio </a>
+            </li>
+            <li class="menu-elem">
+              <a href="personajes.html" class="menu-icon"> Personajes </a>
+            </li>
+            <li class="menu-elem">
+              <a href="temporadas.html" class="menu-icon"> Temporadas </a>
+            </li>
+            <li class="menu-elem">
+              <a href="curiosidades.html" class="menu-icon"> Curiosidades </a>
+            </li>
+            <li class="menu-elem">
+              <a href="contacto.html" class="menu-icon"> Contacto </a>
+            </li>
+        </ul>
+        <ul>
+            <li><p>@2024 | Todos los derechos reservados</p></li>
+        </ul>
     </footer>
+    <script type="text/javascript">
+        function myFunction() {
+          var x = document.getElementById("menu_bar");
+          if (x.className === "") {
+            x.className += " responsive";
+          } else {
+            x.className = "";
+          }
+        }
+    </script>
 </body>
 </html>

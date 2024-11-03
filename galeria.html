@@ -7,8 +7,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Neucha&family=Rubik+Glitch&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/estilos1.css">
+    <link href="css/lightbox.css" rel="stylesheet" />
     <title>Steins;Gate</title>
 </head>
 <body>
@@ -16,7 +17,8 @@
         <div>
             <a href="index.html"><img src="images/logo.jpg" alt="Logo"></a>
         </div>
-        <nav>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        <nav id="menu_bar" class="">
             <ul> 
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="personajes.html">Personajes</a></li>
@@ -28,26 +30,58 @@
         </nav>
     </header>
     <section>
-        <h1>IMÁGENES</h1>
+        <h1>Galería</h1>
         <article class="galeria">
-            <div class="gal">
-                <a href="images/dmail.jpg" data-lightbox="mygallery" data-title="Nuestros protagonistas experimentando con el Telélofo Microondas."><img src="images/dmail.jpg" alt="Dmail"></a>
-                <a href="images/microoondas.jpg" data-lightbox="mygallery" data-title="El Teléfono Microondas en funcionamiento."><img src="images/microoondas.jpg" alt="Teléfono Microondas"></a>
-                <a href="images/gelbanana.jpg" data-lightbox="mygallery" data-title="La banana del Teléfono Microondas volvió a su racimo."><img src="images/gelbanana.jpg" alt="Gel Banana"></a>
+            <div>
+                <a class="example-image-link" href="images/galeria/dmail.jpg" data-lightbox="Dmail" data-title="Enviando un Dmail."><img class="example-image" src="images/galeria/dmail.jpg" alt="Dmail"/></a>
+                <a class="example-image-link" href="images/galeria/microoondas.jpg" data-lightbox="Telefono Microondas" data-title="El Teléfono Microondas funcionando."><img class="example-image" src="images/galeria/microoondas.jpg" alt="Teléfono Microondas funcionando"/></a>
+                <a class="example-image-link" href="images/galeria/gelbanana.jpg" data-lightbox="Gel banana" data-title="La banana del microondas volvió a su racimo"><img class="example-image" src="images/galeria/gelbanana.jpg" alt="Gel banana"/></a>  
             </div>
-            <div class="gal">
-                <a href="images/consecuencias1.jpg" data-lightbox="mygallery" data-title="Unos intrusos irrumpen en el laboratorio."><img src="images/consecuencias1.jpg" alt="Consecuencias 1"></a>
-                <a href="images/consecuencias3.jpg" data-lightbox="mygallery" data-title="Okabe se enfrenta a las consecuencias de sus actos."><img src="images/consecuencias3.jpg" alt="Consecuencias 3"></a>
-                <a href="images/divergencia.jpg" data-lightbox="mygallery" data-title="Este aparato mide qué tanto cambió la línea de tiempo respecto a la original."><img src="images/divergencia.jpg" alt="Medidor de divergencia"></a>
+            <div>
+                <a class="example-image-link" href="images/galeria/consecuencias1.jpg" data-lightbox="Intrusos irrumpen" data-title="Unos intrusos irrumpen en el laboratorio."><img class="example-image" src="images/galeria/consecuencias1.jpg" alt="Intrusos irrumpen"/></a>
+                <a class="example-image-link" href="images/galeria/consecuencias4.jpg" data-lightbox="Secuestro de Okabe" data-title="Okabe se enfrenta a las consecuencias de experimentar con el tiempo."><img class="example-image" src="images/galeria/consecuencias4.jpg" alt="Secuestro de Okabe"/></a>
+                <a class="example-image-link" href="images/galeria/divergencia.jpg" data-lightbox="Medidor de divergencia" data-title="El Medidor de divergencia indica qué tanto cambió la línea de tiempo respecto a la original"><img class="example-image" src="images/galeria/divergencia.jpg" alt="Medidor de divergencia"/></a>  
             </div>
         </article>
     </section>
-    <footer>
-        <a href="https://www.youtube.com/watch?v=B4LvDiIi128&t=0" target="_blank"><img src="images/redes/facebook.jpg" alt="Facebook"></a>
-        <a href="https://www.youtube.com/watch?v=B4LvDiIi128&t=0" target="_blank"><img src="images/redes/twitter.jpg" alt="Twitter"></a>
-        <a href="https://www.youtube.com/watch?v=B4LvDiIi128&t=0" target="_blank"><img src="images/redes/instagram.jpg" alt="Instagram"></a>
-        <a href="https://www.youtube.com/watch?v=B4LvDiIi128&t=0" target="_blank"><img src="images/redes/youtube.jpg" alt="Youtube"></a>
+    <footer class="pie">
+        <ul>
+            <li><a href="https://www.youtube.com/watch?v=B4LvDiIi128&t=0s" target="_blank"><img src="images/redes/facebook.jpg" alt="Facebook"></a></li>
+            <li><a href="https://www.youtube.com/watch?v=B4LvDiIi128&t=0s" target="_blank"><img src="images/redes/twitter.jpg" alt="Twitter"></a></li>
+            <li><a href="https://www.youtube.com/watch?v=B4LvDiIi128&t=0s" target="_blank"><img src="images/redes/instagram.jpg" alt="Instagram"></a></li>
+            <li><a href="https://www.youtube.com/watch?v=B4LvDiIi128&t=0s" target="_blank"><img src="images/redes/youtube.jpg" alt="Youtube"></a></li>
+        </ul>
+        <ul>
+            <li class="menu-elem">
+              <a href="index.html" class="menu-icon"> Inicio </a>
+            </li>
+            <li class="menu-elem">
+              <a href="personajes.html" class="menu-icon"> Personajes </a>
+            </li>
+            <li class="menu-elem">
+              <a href="temporadas.html" class="menu-icon"> Temporadas </a>
+            </li>
+            <li class="menu-elem">
+              <a href="curiosidades.html" class="menu-icon"> Curiosidades </a>
+            </li>
+            <li class="menu-elem">
+              <a href="contacto.html" class="menu-icon"> Contacto </a>
+            </li>
+        </ul>
+        <ul>
+            <li><p>@2024 | Todos los derechos reservados</p></li>
+        </ul>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+    <script type="text/javascript">
+        function myFunction() {
+          var x = document.getElementById("menu_bar");
+          if (x.className === "") {
+            x.className += " responsive";
+          } else {
+            x.className = "";
+          }
+        }
+    </script>
 </body>
 </html>
