@@ -267,22 +267,22 @@ section{
 	background-color: rgb(178, 183, 192);
 	border-style:double ;
 	border-radius: 12px;
-	margin-top: 2%;
-	display: block;
-	justify-content: center;
-	align-items: center;
 }
-.galeria div{
+.conteiner{
+	width: 100%;
+	min-height: 100vh;
 	display: flex;
-	justify-content: center;
 	align-items: center;
-	padding-left: 5%;
-	padding-right: 5%;
-	padding-top: 2.5%;
-	padding-bottom: 2.5%;
+	justify-content: center;
+	padding: 50px 8%;
 }
-.galeria div img {
-	width: 90%;
+.gallery {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-gap: 30px;
+}
+.gallery img{
+	width: 100%;
 	border-radius: 10px;
 	border-style: groove;
 }
@@ -494,10 +494,11 @@ h5{
 	}
 	.principal div img{
 		width: 90%;
+		margin-left: 5%;
 	}
 	
 	.personajes{
-		width: 65%;
+		width: 75%;
 		padding: 5%;
 		margin-left: 12%;
 	}
@@ -512,7 +513,7 @@ h5{
 		justify-self: center;
 	}
 	.personajes2{
-		width: 65%;
+		width: 75%;
 		padding: 5%;
 		margin-left: 12%;
 	}
@@ -523,6 +524,7 @@ h5{
 	}
 	.personajes2 div img{
 		width: 80%;
+		margin-left: 4%;
 	}
 	.personajes2 div p{
 		width: 100%;
@@ -533,6 +535,7 @@ h5{
 	}
 	#mayuri img{
 		width: 250px;
+		margin-left: 6%;
 	}
 	.temporadas {
 		width: 85%;
@@ -558,6 +561,10 @@ h5{
 		width: 100%;
 	}
 	.peli{
+		width: 85%;
+		justify-self: center;
+	}
+	.galeria{
 		width: 85%;
 		justify-self: center;
 	}
